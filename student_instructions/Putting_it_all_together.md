@@ -127,16 +127,13 @@ This function attempts to find a match between the words in a key phrases dictio
     - phrase_checker: A boolean variable representing the whether a match is discovered between the function's input lists.
   - The function implementation can be found [here](student_solution_files/find_key_phrases.py)
             
-**Function 3 - `email_response(name, email_address, critical_phrase_list, sentiment_list, sentiment_scores, list_of_extracted_phrases, AWS_Comprehend_Sentiment_Dump):`**
+**Function 3 - `email_response(name, critical_phrase_list,list_of_extracted_phrases, AWS_Comprehend_Sentiment_Dump):`**
     
 This function takes in the parsed information from the sender i.e. `name`, `email_address`, the `sentiment` and the `key phrases` output from AWS Comprehend, and a `list of critical phrases`, and uses the logic described in the 'Process Description' section to populate a email. 
 
   - Input arguments:     
     - name: The name of the requester.
-    - email_address: The email address of the requester.
     - critical_phrase_list: A list of words that you want to match to the words in the AWS key phrases dictionary.
-    - sentiment_list: A list of possible sentiments that a message could contain i.e. ['Positive', 'Negative', 'Neutral', 'Mixed'].
-    - sentiment_scores: The sentiment score attached to each of the listed sentiments in the `sentiment_list` as determined by AWS Comprehend.
     - list_of_extracted_phrases: A list of the individual words present in the key phrases dictionary.
     - AWS_Comprehend_Sentiment_Dump: The sentiment summary dictionary as populated by AWS Comprehend.
   - Outputs: 
