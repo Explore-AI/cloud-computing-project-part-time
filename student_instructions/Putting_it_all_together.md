@@ -129,7 +129,7 @@ This function attempts to find a match between the words in a key phrases dictio
             
 **Function 3 - `email_response(name, critical_phrase_list,list_of_extracted_phrases, AWS_Comprehend_Sentiment_Dump):`**
     
-This function takes in the parsed information from the sender i.e. `name`, `email_address`, the `sentiment` and the `key phrases` output from AWS Comprehend, and a `list of critical phrases`, and uses the logic described in the 'Process Description' section to populate a email. 
+This function takes in the parsed information from the sender i.e. `name`, the `key phrases` output from AWS Comprehend, and a `list of critical phrases`, and uses the logic described in the 'Process Description' section to populate a email. 
 
   - Input arguments:     
     - name: The name of the requester.
